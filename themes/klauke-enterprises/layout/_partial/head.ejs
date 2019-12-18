@@ -10,11 +10,23 @@
     <meta name="description" content="">
     <meta name="author" content="Felix Klauke">
 
+    <%- open_graph() %>
+
     <link rel="icon" href="favicon/favicon.ico">
 
     <title>Felix Klauke | Blog</title>
 
     <%- css('css/style.css') %>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-131487381-3"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-131487381-3');
+    </script>
 
     <!-- Robots -->
     <meta name="robots" content="index, follow">
