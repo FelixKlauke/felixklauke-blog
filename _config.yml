@@ -6,10 +6,13 @@
 title: Felix Klauke | Blog
 subtitle: 'Blog von Felix Klauke über Themen wie Programmierung, IT und vieles mehr.'
 description: 'Blog von Felix Klauke über Themen wie Programmierung, IT und vieles mehr.'
-keywords: Felix Klauke, Technik, IT, Programmierung, Blog, Java, Linux, Server, Hosting
+keywords: Felix Klauke,Technik,IT,Programmierung,Blog,Java,Linux,Server,Hosting
 author: Felix Klauke
 language: de
 timezone: ''
+
+# Google Analtics
+google_analytics: UA-131487381-3
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
