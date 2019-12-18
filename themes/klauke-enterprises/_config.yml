@@ -1,0 +1,8 @@
+menu:
+  Home: /
+  Archiv: /archives
+
+excerpt_link: Weiterlesen
+
+less:
+  paths: [css]

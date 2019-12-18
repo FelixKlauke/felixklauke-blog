@@ -1,0 +1,30 @@
+<div class="article-excerpt">
+
+    <div class="row align-items-center">
+        <div class="col-md-10 col-sm-12">
+
+            <!-- Title -->
+            <h2>
+                <a href="<%- config.root %><%- item.path %>">
+                    <%- item.title %>
+                </a>
+            </h2>
+
+            <p>
+                <%- item.excerpt %>
+            </p>
+
+            <p class="published">
+                Veröffentlicht am <%= item.date.format(config.date_format) %> von <%- item.author %>
+            </p>
+        </div>
+        <div class="col-md-2 col-sm-12">
+
+            <a class="button button-primary" href="<%- config.root %><%- item.path %>">
+                <%= theme.excerpt_link %>
+            </a>
+        </div>
+    </div>
+
+
+</div>

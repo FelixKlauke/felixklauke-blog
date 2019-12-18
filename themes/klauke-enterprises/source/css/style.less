@@ -1,0 +1,329 @@
+/* ############### */
+/* ### Imports ### */
+/* ############### */
+
+// Bootstrap Grid
+@import url('https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap-grid.min.css');
+
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Roboto');
+
+// Font awesome
+@import url('https://use.fontawesome.com/releases/v5.7.2/css/solid.css');
+@import url('https://use.fontawesome.com/releases/v5.7.2/css/brands.css');
+@import url('https://use.fontawesome.com/releases/v5.7.2/css/fontawesome.css');
+
+// Variables
+@import "vars";
+
+/* ############### */
+/* ### General ### */
+/* ############### */
+// In general we don't want the body or paragraphs to have any outer bounds.
+body, p {
+  padding: 0;
+  margin: 0;
+}
+
+// In general we want to use Roboto font everywhere.
+h1, h2, h3, h4, h5, h6, p, a, li {
+  font-family: @font-roboto;
+}
+
+// Don't decorate links by default.
+a {
+  text-decoration: none;
+}
+
+// Make sections sectional by default
+section {
+
+  padding: 30px 0;
+}
+
+/* ################## */
+/* ### Components ### */
+/* ################## */
+header {
+
+  .contact-header {
+
+    padding: 14px 0;
+
+    background-color: @color-gray;
+    color: @color-white-smoke;
+
+    @media only screen and (max-width: @sm-max) {
+      text-align: center;
+    }
+
+    p {
+      margin-right: 14px;
+
+      a {
+        color: @color-white-smoke;
+      }
+    }
+
+    .contact-cta {
+
+      @media only screen and (max-width: @sm-max) {
+        display: none;
+      }
+
+      text-align: right;
+      margin: 10px 0 10px auto;
+
+      a {
+        white-space: nowrap;
+      }
+    }
+  }
+
+  .navbar {
+
+    padding: 20px 0;
+    background-color: @color-white-smoke;
+
+    .navbar-toggle {
+
+      cursor: pointer;
+      display: none;
+      margin-left: auto;
+      margin-right: 20px;
+
+      @media only screen and (max-width: @sm-max) {
+        display: flex;
+      }
+    }
+
+    .navbar-brand {
+
+      img {
+        border-radius: 50%;
+        width: 80px;
+      }
+
+      @media screen and (max-width: @sm-min) {
+        img {
+          margin-left: 20px;
+        }
+      }
+    }
+
+    .navbar-nav {
+
+      margin-left: auto;
+      list-style: none;
+      padding: 0;
+
+      @media only screen and (max-width: @sm-max) {
+        display: none;
+        flex-basis: 100%;
+        flex-direction: column;
+      }
+
+      li {
+        display: inline-block;
+
+        @media only screen and (max-width: @sm-max) {
+          display: flex;
+          justify-content: center;
+        }
+
+        a {
+          color: @color-gray;
+          font-size: larger;
+          padding: 15px;
+          transition: 0.6s;
+          border-radius: 4px;
+
+          &:hover {
+            background-color: @color-white;
+            transition: 0.6s;
+          }
+        }
+
+        a.active {
+          box-shadow: 0 0.2rem 2rem 0.2rem rgba(0, 0, 0, .15);
+        }
+      }
+
+    }
+  }
+
+}
+
+
+footer {
+
+  .footer-widgets {
+    background-color: @color-gray;
+    padding: 20px 0;
+
+    .footer-widget {
+
+      @media only screen and (max-width: @sm-max) {
+        text-align: center;
+      }
+
+      h3 {
+        color: @color-white;
+      }
+
+      img {
+        width: 100%;
+        margin: 0 15px 15px;
+      }
+
+      ul {
+
+        padding: 0;
+        list-style: none;
+        line-height: 1.3;
+
+        li {
+          margin-top: 5px;
+          display: block;
+
+          a {
+            color: @color-white-smoke;
+          }
+        }
+      }
+    }
+  }
+
+  .footer-copyright {
+    background-color: @color-gray-dark;
+    padding: 12px 0;
+
+    p {
+      color: @color-white-smoke;
+    }
+
+    .copyright-social {
+      text-align: right;
+
+      ul {
+        list-style: none;
+        padding: 0;
+
+        li {
+          display: inline-block;
+
+          margin: 0 5px;
+
+          .fab {
+            color: @color-white;
+          }
+        }
+      }
+    }
+  }
+}
+
+.button {
+  text-align: center;
+  padding: 12px;
+  border-radius: 5px;
+  font-family: @font-roboto;
+
+  cursor: pointer;
+
+  box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15);
+}
+
+.button-primary {
+  background-color: @color-orange;
+  color: @color-white;
+
+  transition: 0.6s;
+
+  &:hover {
+    background-color: @color-white-smoke;
+    color: @color-gray;
+
+    transition: 0.6s;
+  }
+}
+
+.button-disabled {
+
+  cursor: not-allowed;
+}
+
+/* ############### */
+/* ### Content ### */
+/* ############### */
+
+.article-excerpt {
+
+  padding: 20px;
+  margin: 40px 0;
+
+  background-color: @color-white-smoke;
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+
+  h2 {
+    margin: 5px 0px;
+  }
+
+  h2 a {
+    color: black !important;
+  }
+
+  a {
+    margin-left: auto;
+  }
+
+  p.published {
+    margin: 20px 0 0;
+    font-style: italic;
+  }
+}
+
+#blog-article {
+
+  padding: 40px 0;
+
+  article {
+
+    line-height: 1.4;
+
+    h1 {
+      font-size: 28px;
+    }
+
+    h1, h2, h3, h4, h5, h6, a, p, li {
+      font-family: 'Open Sans', sans-serif !important;
+      text-align: justify;
+    }
+
+    img {
+      display: block;
+      width: 66%;
+      margin: 20px auto;
+    }
+
+    .button-blog {
+
+      display: table;
+      margin: 20px auto;
+      text-align: center;
+    }
+  }
+
+  .author {
+
+    padding: 10%;
+    background-color: @color-white-smoke;
+
+    text-align: center;
+
+    img {
+      width: 60%;
+      border-radius: 50%;
+    }
+  }
+}
