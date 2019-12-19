@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Felix Klauke | Blog</title>
+  <icon>https://blog.felix-klauke.com/icon.png</icon>
+  <subtitle>Blog von Felix Klauke über Themen wie Programmierung, IT und vieles mehr.</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="https://blog.felix-klauke.com/"/>
+  <updated>2019-12-19T09:03:42.567Z</updated>
+  <id>https://blog.felix-klauke.com/</id>
+  
+  <author>
+    <name>Felix Klauke</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Via Gradle ein Maven Artefakt in die GitHub Package Registry ausliefern</title>
+    <link href="https://blog.felix-klauke.com/2019/12/19/publish-maven-artifact-github-package-registry/"/>
+    <id>https://blog.felix-klauke.com/2019/12/19/publish-maven-artifact-github-package-registry/</id>
+    <published>2019-12-19T09:03:42.567Z</published>
+    <updated>2019-12-19T09:03:42.567Z</updated>
+    
+    <summary type="html">
+    
+      Zur statischen Vermessung von Code gibt es Vielzahl von Metriken. Vor allem wenn es um Formatierung geht ist Checkstyle das Tool der Wahl.
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Checkstyle mit Gradle verwenden</title>
+    <link href="https://blog.felix-klauke.com/2019/12/19/use-checkstyle-with-gradle/"/>
+    <id>https://blog.felix-klauke.com/2019/12/19/use-checkstyle-with-gradle/</id>
+    <published>2019-12-19T09:03:42.567Z</published>
+    <updated>2019-12-19T09:03:42.567Z</updated>
+    
+    <summary type="html">
+    
+      Zur statischen Vermessung von Code gibt es Vielzahl von Metriken. Vor allem wenn es um Formatierung geht ist Checkstyle das Tool der Wahl.
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+</feed>
