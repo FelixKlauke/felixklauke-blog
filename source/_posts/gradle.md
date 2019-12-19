@@ -1,10 +1,10 @@
 ---
-title: Check Style mit Gradle verwenden
+title: Checkstyle mit Gradle verwenden
 excerpt: Zur statischen Vermessung von Code gibt es Vielzahl von Metriken. Vor allem wenn es um Formatierung geht ist Checkstyle das Tool der Wahl. 
 author: Felix Klauke
 ---
 
-# Check Style mit Gradle verwenden
+# Checkstyle mit Gradle verwenden
 
 Im folgenden werde ich darauf eingehen, wozu Code Metriken gut sind, was Checkstyle dabei für uns leisten kann und was man dafür tun muss, dass es das tut.
 
