@@ -100,7 +100,21 @@
             <div class="col-md-8 col-sm-12">
                 <article>
 
-                    
+                    <h1 id="Check-Style-mit-Gradle-verwenden"><a href="#Check-Style-mit-Gradle-verwenden" class="headerlink" title="Check Style mit Gradle verwenden"></a>Check Style mit Gradle verwenden</h1><p>Im folgenden werde ich darauf eingehen, wozu Code Metriken gut sind, was Checkstyle dabei für uns leisten kann und was man dafür tun muss, dass es das tut.</p>
+<h2 id="Gradle"><a href="#Gradle" class="headerlink" title="Gradle"></a>Gradle</h2><p>Gradle kommt als starke Alternative zu Gradle in einer Vielzahl von Projekten zum Einsatz. Es glänzt gerade dann, wenn man den Buil Prozess genau an seine Bedürfnisse anpassen will, wie es hier der Fall ist.</p>
+<h2 id="Metriken"><a href="#Metriken" class="headerlink" title="Metriken"></a>Metriken</h2><p>Ein ganz wesentlicher Bestandteil der Vermessung von Source Code ist die Erhebung von Metriken. Durch sie können wir mehr über die Beschaffenheit unseres Source Code erfahren und garantieren, dass wir uns an unsere Standard halten.</p>
+<h2 id="Checkstyle"><a href="#Checkstyle" class="headerlink" title="Checkstyle"></a>Checkstyle</h2><p><a href="https://checkstyle.sourceforge.io/" target="_blank" rel="noopener">Checkstyle</a> ist ein Tool, mit dem man Java Source Code hinsichtlich der Einhaltung von definieren Standards überprüfen kann. Besonders, wenn man einen besimmten Code Style forcieren will kommt Checkstyle zum Einsatz und kann lückenlos in den Build-Prozess integriert werden.   </p>
+<p>Dazu wird Checkstyle mit einer Konfigurationsdatei gespeist, die definiert, wie unser Source Code auszusehen hat. Prominente Code Styles sind zum Beispiel der Stil von <a href="https://github.com/checkstyle/checkstyle/blob/master/src/main/resources/google_checks.xml" target="_blank" rel="noopener">Google</a> oder auch der von <a href="https://github.com/checkstyle/checkstyle/blob/master/src/main/resources/sun_checks.xml" target="_blank" rel="noopener">Sun</a>.</p>
+<p>Während die Stile von Google und Sun bereits mit Checkstyle ausgeliefert werden, kann und sollte man in vielen Fällen eine eigene Config bereitstellen, denn meistens wird man kleine Anpassung vornehmen müssen, vor allem wenn man mit Editorconfig arbeitet.</p>
+<p>Eine eigene Konfiguration kann problemlos unter <code>config/checkstyle/checkstyle.xml</code> abgelegt werden. Ein Beispiel dafür befindet sich in meinem Projekt <a href="https://github.com/FelixKlauke/angelina/blob/dev/config/checkstyle/checkstyle.xml" target="_blank" rel="noopener">angelina</a>.</p>
+<h2 id="Konfiguration"><a href="#Konfiguration" class="headerlink" title="Konfiguration"></a>Konfiguration</h2><p>Zuerst müsst ihr das Checkstyle gradle Plugin einbinden:</p>
+<figure class="highlight groovy"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs groovy">allprojects &#123;<br>  apply <span class="hljs-string">plugin:</span> <span class="hljs-string">'checkstyle'</span><br>&#125;<br></code></pre></td></tr></table></figure>
+
+<p>Bei der Konfiguration ist es sehr wichtig, zu beachten, dass ihr eine aktuelle Tool Version nutzt, denn die eingebaute default version ist in der Regel uhralt und wird nicht mit eurem aktuellen Regelsatz kompatibel sein.</p>
+<figure class="highlight groovy"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs groovy">allprojects &#123;<br>  checkstyle &#123;<br>    maxWarnings = <span class="hljs-number">0</span><br>    ignoreFailures = <span class="hljs-literal">false</span><br>    toolVersion <span class="hljs-string">'8.27'</span><br>    checkstyleTest.enabled = <span class="hljs-literal">false</span><br>  &#125;<br>&#125;<br></code></pre></td></tr></table></figure>
+
+<p>Nun ist alles bereit um eure Builds fehlschlagen zu lassen, wenn ihr auch nur ein Leerzeichen zu viel habt, herzlichen Glückwunsch. Bei Fragen und Problemen könnt ihr mich immer gerne kontaktieren.</p>
+
 
                 </article>
             </div>
@@ -264,6 +278,8 @@
         src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
         crossorigin="anonymous"></script>
+
+<script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.17.1/build/highlight.min.js"></script>
 
 
 <script src="/js/navigation.js"></script>
