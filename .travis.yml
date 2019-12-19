@@ -7,6 +7,7 @@ branches:
   only:
     - master
 script:
+  - hexo clean
   - hexo generate
   - cp CNAME public/
 deploy:
