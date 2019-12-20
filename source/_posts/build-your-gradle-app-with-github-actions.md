@@ -3,6 +3,7 @@ title: Gradle Projekt mit GitHub Actions bauen
 excerpt: Für Build Tools wie Gradle steht eine Vielzahl von CIs zur Verfügung - Der Ansatz mittels GitHub Actions.
 author: Felix Klauke
 toc: true
+date: 2019-12-17
 ---
 
 # Gradle Projekt mit GitHub Actions bauen

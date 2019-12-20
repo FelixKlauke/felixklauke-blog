@@ -3,6 +3,7 @@ title: Via Gradle ein Maven Artefakt in die GitHub Package Registry ausliefern
 excerpt: Zur statischen Vermessung von Code gibt es Vielzahl von Metriken. Vor allem wenn es um Formatierung geht ist Checkstyle das Tool der Wahl. 
 author: Felix Klauke
 toc: true
+date: 2019-12-18
 ---
 
 # Via Gradle ein Maven Artefakt in die GitHub Package Registry ausliefern
