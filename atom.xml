@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://blog.felix-klauke.com/"/>
-  <updated>2019-12-19T18:25:08.127Z</updated>
+  <updated>2019-12-20T05:31:49.924Z</updated>
   <id>https://blog.felix-klauke.com/</id>
   
   <author>
@@ -18,10 +18,10 @@
   
   <entry>
     <title>Gradle Projekt mit GitHub Actions bauen</title>
-    <link href="https://blog.felix-klauke.com/2019/12/19/build-your-gradle-app-with-github-actions/"/>
-    <id>https://blog.felix-klauke.com/2019/12/19/build-your-gradle-app-with-github-actions/</id>
-    <published>2019-12-19T18:25:08.127Z</published>
-    <updated>2019-12-19T18:25:08.127Z</updated>
+    <link href="https://blog.felix-klauke.com/2019/12/20/build-your-gradle-app-with-github-actions/"/>
+    <id>https://blog.felix-klauke.com/2019/12/20/build-your-gradle-app-with-github-actions/</id>
+    <published>2019-12-20T05:31:49.924Z</published>
+    <updated>2019-12-20T05:31:49.924Z</updated>
     
     <summary type="html">
     
@@ -35,10 +35,10 @@
   
   <entry>
     <title>Via Gradle ein Maven Artefakt in die GitHub Package Registry ausliefern</title>
-    <link href="https://blog.felix-klauke.com/2019/12/19/publish-maven-artifact-github-package-registry/"/>
-    <id>https://blog.felix-klauke.com/2019/12/19/publish-maven-artifact-github-package-registry/</id>
-    <published>2019-12-19T18:25:08.127Z</published>
-    <updated>2019-12-19T18:25:08.127Z</updated>
+    <link href="https://blog.felix-klauke.com/2019/12/20/publish-maven-artifact-github-package-registry/"/>
+    <id>https://blog.felix-klauke.com/2019/12/20/publish-maven-artifact-github-package-registry/</id>
+    <published>2019-12-20T05:31:49.924Z</published>
+    <updated>2019-12-20T05:31:49.924Z</updated>
     
     <summary type="html">
     
@@ -52,10 +52,10 @@
   
   <entry>
     <title>Checkstyle mit Gradle verwenden</title>
-    <link href="https://blog.felix-klauke.com/2019/12/19/use-checkstyle-with-gradle/"/>
-    <id>https://blog.felix-klauke.com/2019/12/19/use-checkstyle-with-gradle/</id>
-    <published>2019-12-19T18:25:08.127Z</published>
-    <updated>2019-12-19T18:25:08.127Z</updated>
+    <link href="https://blog.felix-klauke.com/2019/12/20/use-checkstyle-with-gradle/"/>
+    <id>https://blog.felix-klauke.com/2019/12/20/use-checkstyle-with-gradle/</id>
+    <published>2019-12-20T05:31:49.924Z</published>
+    <updated>2019-12-20T05:31:49.924Z</updated>
     
     <summary type="html">
     
