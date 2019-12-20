@@ -10,7 +10,7 @@ Im folgenden werde ich darauf eingehen, wozu Code Metriken gut sind, was Checkst
 
 ## Gradle
 
-Gradle kommt als starke Alternative zu Gradle in einer Vielzahl von Projekten zum Einsatz. Es glänzt gerade dann, wenn man den Buil Prozess genau an seine Bedürfnisse anpassen will, wie es hier der Fall ist.
+Gradle kommt als starke Alternative zu Maven in einer Vielzahl von Projekten zum Einsatz. Es glänzt gerade dann, wenn man den Buil Prozess genau an seine Bedürfnisse anpassen will, wie es hier der Fall ist.
 
 ## Metriken
 Ein ganz wesentlicher Bestandteil der Vermessung von Source Code ist die Erhebung von Metriken. Durch sie können wir mehr über die Beschaffenheit unseres Source Code erfahren und garantieren, dass wir uns an unsere Standard halten.

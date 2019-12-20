@@ -5,5 +5,7 @@ menu:
 
 excerpt_link: Weiterlesen
 
+favicon: favicon.ico
+
 less:
   paths: [css]
