@@ -11,8 +11,8 @@ author: Felix Klauke
 language: de
 timezone: ''
 
-# Google Analtics
-google_analytics: UA-131487381-3
+# Google Analytics
+google_analytics: UA-131487381-15
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
