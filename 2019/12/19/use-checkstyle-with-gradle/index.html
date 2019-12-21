@@ -19,8 +19,9 @@
 <meta property="og:site_name" content="Felix Klauke | Blog">
 <meta property="og:description" content="Zur statischen Vermessung von Code gibt es Vielzahl von Metriken. Vor allem wenn es um Formatierung geht ist Checkstyle das Tool der Wahl.">
 <meta property="og:locale" content="de_DE">
+<meta property="og:image" content="https:&#x2F;&#x2F;blog.felix-klauke.com&#x2F;img&#x2F;article&#x2F;checkstyle.png">
 <meta property="article:published_time" content="2019-12-19T00:00:00.000Z">
-<meta property="article:modified_time" content="2019-12-20T21:25:37.132Z">
+<meta property="article:modified_time" content="2019-12-21T06:40:57.175Z">
 <meta property="article:author" content="Felix Klauke">
 <meta property="article:tag" content="Felix Klauke">
 <meta property="article:tag" content="Technik">
@@ -32,6 +33,7 @@
 <meta property="article:tag" content="Server">
 <meta property="article:tag" content="Hosting">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https:&#x2F;&#x2F;blog.felix-klauke.com&#x2F;img&#x2F;article&#x2F;checkstyle.png">
 
     <link rel="icon" href="favicon.ico">
 
@@ -134,7 +136,9 @@
             <div class="col-md-8 col-sm-12">
                 <article>
 
-                    <h1 id="Checkstyle-mit-Gradle-verwenden"><a href="#Checkstyle-mit-Gradle-verwenden" class="headerlink" title="Checkstyle mit Gradle verwenden"></a>Checkstyle mit Gradle verwenden</h1><p>Im folgenden werde ich darauf eingehen, wozu Code Metriken gut sind, was Checkstyle dabei für uns leisten kann und was man dafür tun muss, dass es das tut.</p>
+                    <img src="/img/article/checkstyle.png" class="" title="[width] [height] " alt="Checkstyle">
+
+<h1 id="Checkstyle-mit-Gradle-verwenden"><a href="#Checkstyle-mit-Gradle-verwenden" class="headerlink" title="Checkstyle mit Gradle verwenden"></a>Checkstyle mit Gradle verwenden</h1><p>Im folgenden werde ich darauf eingehen, wozu Code Metriken gut sind, was Checkstyle dabei für uns leisten kann und was man dafür tun muss, dass es das tut.</p>
 <h2 id="Gradle"><a href="#Gradle" class="headerlink" title="Gradle"></a>Gradle</h2><p>Gradle kommt als starke Alternative zu Maven in einer Vielzahl von Projekten zum Einsatz. Es glänzt gerade dann, wenn man den Buil Prozess genau an seine Bedürfnisse anpassen will, wie es hier der Fall ist.</p>
 <h2 id="Metriken"><a href="#Metriken" class="headerlink" title="Metriken"></a>Metriken</h2><p>Ein ganz wesentlicher Bestandteil der Vermessung von Source Code ist die Erhebung von Metriken. Durch sie können wir mehr über die Beschaffenheit unseres Source Code erfahren und garantieren, dass wir uns an unsere Standard halten.</p>
 <h2 id="Checkstyle"><a href="#Checkstyle" class="headerlink" title="Checkstyle"></a>Checkstyle</h2><p><a href="https://checkstyle.sourceforge.io/" target="_blank" rel="noopener">Checkstyle</a> ist ein Tool, mit dem man Java Source Code hinsichtlich der Einhaltung von definieren Standards überprüfen kann. Besonders, wenn man einen besimmten Code Style forcieren will kommt Checkstyle zum Einsatz und kann lückenlos in den Build-Prozess integriert werden.   </p>
