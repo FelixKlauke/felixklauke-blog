@@ -5,6 +5,8 @@ author: Felix Klauke
 date: 2019-12-19
 ---
 
+{% img /img/article/checkstyle.png [width] [height] '"Checkstyle" "Checkstyle"' %}
+
 # Checkstyle mit Gradle verwenden
 
 Im folgenden werde ich darauf eingehen, wozu Code Metriken gut sind, was Checkstyle dabei für uns leisten kann und was man dafür tun muss, dass es das tut.
