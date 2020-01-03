@@ -226,6 +226,12 @@ footer .footer-copyright .copyright-social ul li .fab {
 }
 .article-excerpt a {
   margin-left: auto;
+  display: block;
+}
+@media screen and (max-width: 768px) {
+  .article-excerpt a {
+    margin-top: 10px;
+  }
 }
 .article-excerpt p.published {
   margin: 20px 0 0;
