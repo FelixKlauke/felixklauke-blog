@@ -12,15 +12,13 @@
     <meta name="description" content="">
     <meta name="author" content="Felix Klauke">
 
-    <meta name="description" content="Zur statischen Vermessung von Code gibt es Vielzahl von Metriken. Vor allem wenn es um Formatierung geht ist Checkstyle das Tool der Wahl.">
-<meta property="og:type" content="article">
-<meta property="og:title" content="Via Gradle ein Maven Artefakt in die GitHub Package Registry ausliefern">
-<meta property="og:url" content="https:&#x2F;&#x2F;blog.felix-klauke.com&#x2F;2019&#x2F;12&#x2F;18&#x2F;publish-maven-artifact-github-package-registry&#x2F;index.html">
+    <meta name="description" content="Blog von Felix Klauke über Themen wie Programmierung, IT und vieles mehr.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Felix Klauke | Blog">
+<meta property="og:url" content="https:&#x2F;&#x2F;blog.felix-klauke.com&#x2F;archives&#x2F;2020&#x2F;01&#x2F;index.html">
 <meta property="og:site_name" content="Felix Klauke | Blog">
-<meta property="og:description" content="Zur statischen Vermessung von Code gibt es Vielzahl von Metriken. Vor allem wenn es um Formatierung geht ist Checkstyle das Tool der Wahl.">
+<meta property="og:description" content="Blog von Felix Klauke über Themen wie Programmierung, IT und vieles mehr.">
 <meta property="og:locale" content="de_DE">
-<meta property="article:published_time" content="2019-12-18T00:00:00.000Z">
-<meta property="article:modified_time" content="2020-01-13T08:41:24.912Z">
 <meta property="article:author" content="Felix Klauke">
 <meta property="article:tag" content="Felix Klauke">
 <meta property="article:tag" content="Technik">
@@ -125,59 +123,38 @@
 
 <main>
     <div class="container">
-        <section id="blog-article">
+        
+    <div class="article-excerpt">
 
-    <div class="container">
+    <div class="row align-items-center">
+        <div class="col-md-9 col-sm-12">
 
-        <div class="row">
-            <!-- Article content -->
-            <div class="col-md-8 col-sm-12">
-                <article>
+            <!-- Title -->
+            <h2>
+                <a href="/2020/01/12/the-agony-of-finding-a-web-developer/">
+                    Die Qual, einen Web Developer zu finden
+                </a>
+            </h2>
 
-                    <h1 id="Via-Gradle-ein-Maven-Artefakt-in-die-GitHub-Package-Registry-ausliefern"><a href="#Via-Gradle-ein-Maven-Artefakt-in-die-GitHub-Package-Registry-ausliefern" class="headerlink" title="Via Gradle ein Maven Artefakt in die GitHub Package Registry ausliefern"></a>Via Gradle ein Maven Artefakt in die GitHub Package Registry ausliefern</h1><p>Im folgenden werde ich demonstrieren, wie ihr ein mit Gradle gebautes Maven Artefakt in der GitHub Package Registry veröffentlicht. Zum Bauen wird in unserem Fall Travis CI verwendet.</p>
-<h2 id="Warum-die-GitHub-Package-Registry"><a href="#Warum-die-GitHub-Package-Registry" class="headerlink" title="Warum die GitHub Package Registry?"></a>Warum die GitHub Package Registry?</h2><p>Es ist eine berechtigte Frage, wieso man seine Artefakte ausgerechnet in der GitHub Package Registry veröffentlichen sollte. Viele Leute haben ihre eigene, viel flexiblere Registry. </p>
-<h3 id="Verfugbarkeit"><a href="#Verfugbarkeit" class="headerlink" title="Verfügbarkeit"></a>Verfügbarkeit</h3><p>GitHub garantiert eine gewisse Verfügbarkeit eurer Registry. Fast jeder Entwickler kennt den Schmerz, wenn man sein Projekt nicht bauen kann, weil das Repository von irgendeiner Third-Party-Dependency ausgerechnet heute entschieden hat, seinen Jahresurlaub zu nehmen.</p>
-<h3 id="Einfachheit"><a href="#Einfachheit" class="headerlink" title="Einfachheit"></a>Einfachheit</h3><p>Ein Großteil eures Projektes liegt sowieso auf GitHub, wieso nicht alles an einem Ort managen? Durch die Registry hat euer Projekt alles wichtige auf einer Seite übersichtlich zusammengetragen und verfügbar.</p>
-<h3 id="Nachteile"><a href="#Nachteile" class="headerlink" title="Nachteile"></a>Nachteile</h3><p>Es wäre heuchlerisch, nicht auch ein paar Nachteile der GitHub Package Registry zu erwähnen:</p>
-<ol>
-<li>Es ist nicht ohne den Support möglich, Artefakte (aus öffentlichen Registries) zu löschen</li>
-<li>Ihr könnt nach Veröffentlichung nichts mehr editieren</li>
-<li>Ihr könnt Snapshots und releases nicht wirklich trennen</li>
-</ol>
-<h2 id="Gradle-Publishing"><a href="#Gradle-Publishing" class="headerlink" title="Gradle Publishing"></a>Gradle Publishing</h2><p>Gradle veröffentlicht Maven Artefakte mit dem <code>maven-publish</code> Plugin. Dieses müsst ihr zuerst einbinden:</p>
-<figure class="highlight groovy"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs groovy">allprojects &#123;<br>  apply <span class="hljs-string">plugin:</span> <span class="hljs-string">'maven-publish'</span><br>&#125;<br></code></pre></td></tr></table></figure>
+            <p>
+                Bei GommeHDnet sind wir seit einiger Zeit auf der Suche nach einem Web Developer. Was machen wir falsch?
+            </p>
 
-<p>Als nächstes müssen wir die Publication und das Remote Repository angeben. Als Beispiel hier die Konfiguration meines Projektes <a href="https://github.com/FelixKlauke/angelina" target="_blank" rel="noopener">angelina</a>:</p>
-<figure class="highlight groovy"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><code class="hljs groovy">allprojects &#123;<br>  publishing &#123;<br>    repositories &#123;<br>      maven &#123;<br>        name = <span class="hljs-string">"GitHubPackages"</span><br>        url = uri(<span class="hljs-string">"https://maven.pkg.github.com/FelixKlauke/angelina"</span>)<br>        credentials &#123;<br>          username = project.findProperty(<span class="hljs-string">"gpr.user"</span>) ?: System.getenv(<span class="hljs-string">"GITHUB_PACKAGE_REGISTRY_USER"</span>)<br>          password = project.findProperty(<span class="hljs-string">"gpr.key"</span>) ?: System.getenv(<span class="hljs-string">"GITHUB_PACKAGE_REGISTRY_API_KEY"</span>)<br>        &#125;<br>      &#125;<br>    &#125;<br>    publications &#123;<br>      gpr(MavenPublication) &#123;<br>        from(components.java)<br>      &#125;<br>    &#125;<br>  &#125;<br>&#125;<br></code></pre></td></tr></table></figure>
-
-<p>Wie man sieht werden die Zugangsdaten aus den properties oder aus dem Environment geladen. Damit diese auch einem CI Server verfügbar sind müsssen wir entsprechend diese Environment Variables anlegen.</p>
-<ol>
-<li>Ihr erstellt einen <a href="https://github.com/settings/tokens" target="_blank" rel="noopener">Personal Access Token</a></li>
-<li>Der Access Token wird entweder per Webinterface hinterlegt oder direkt im Build file via `travis encrypt GITHUB_PACKAGE_REGISTRY_API_KEY=<Token> –pro``` eingepflegt.</li>
-</ol>
-<p>Als letztes passt ihr noch eure .travis.yml wie folgt an:</p>
-<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs yaml"><span class="hljs-comment">##################</span><br><span class="hljs-comment">### Deployment ###</span><br><span class="hljs-comment">##################</span><br><span class="hljs-attr">deploy:</span><br>  <span class="hljs-attr">provider:</span> <span class="hljs-string">script</span><br>  <span class="hljs-attr">script:</span> <span class="hljs-string">./gradlew</span> <span class="hljs-string">publish</span><br>  <span class="hljs-attr">on:</span><br>    <span class="hljs-attr">tags:</span> <span class="hljs-literal">true</span><br></code></pre></td></tr></table></figure>
-
-<p>Diese Konfiguration würde alle getaggten Versionen bauen. Durchs Entfernen des <code>on</code>-Teils würden alle Versionen deployed.</p>
-<p>Das wars! Und nun viel Spaß beim Nutzen der GitHub Package Registry.</p>
-
-
-                </article>
-            </div>
-
-            <!-- Article author -->
-            <div class="col-md-4 col-sm-12">
-                <div class="author">
-                    <img src="/img/avatar.webp" alt="Felix Klauke">
-
-                    <h3>Felix Klauke</h3>
-                </div>
-            </div>
+            <p class="published">
+                Veröffentlicht am 12.01.2020 von Felix Klauke
+            </p>
         </div>
+        <div class="col-md-3 col-sm-12">
 
+            <a class="button button-primary" href="/2020/01/12/the-agony-of-finding-a-web-developer/">
+                Weiterlesen
+            </a>
+        </div>
     </div>
 
-</section>
+
+</div>
+
     </div>
 </main>
 

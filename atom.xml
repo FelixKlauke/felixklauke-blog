@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://blog.felix-klauke.com/"/>
-  <updated>2020-01-04T14:17:06.183Z</updated>
+  <updated>2020-01-13T08:41:24.912Z</updated>
   <id>https://blog.felix-klauke.com/</id>
   
   <author>
@@ -17,11 +17,28 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Die Qual, einen Web Developer zu finden</title>
+    <link href="https://blog.felix-klauke.com/2020/01/12/the-agony-of-finding-a-web-developer/"/>
+    <id>https://blog.felix-klauke.com/2020/01/12/the-agony-of-finding-a-web-developer/</id>
+    <published>2020-01-12T00:00:00.000Z</published>
+    <updated>2020-01-13T08:41:24.912Z</updated>
+    
+    <summary type="html">
+    
+      Bei GommeHDnet sind wir seit einiger Zeit auf der Suche nach einem Web Developer. Was machen wir falsch?
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
     <title>Checkstyle mit Gradle verwenden</title>
     <link href="https://blog.felix-klauke.com/2019/12/19/use-checkstyle-with-gradle/"/>
     <id>https://blog.felix-klauke.com/2019/12/19/use-checkstyle-with-gradle/</id>
     <published>2019-12-19T00:00:00.000Z</published>
-    <updated>2020-01-04T14:17:06.183Z</updated>
+    <updated>2020-01-13T08:41:24.912Z</updated>
     
     <summary type="html">
     
@@ -38,7 +55,7 @@
     <link href="https://blog.felix-klauke.com/2019/12/18/publish-maven-artifact-github-package-registry/"/>
     <id>https://blog.felix-klauke.com/2019/12/18/publish-maven-artifact-github-package-registry/</id>
     <published>2019-12-18T00:00:00.000Z</published>
-    <updated>2020-01-04T14:17:06.183Z</updated>
+    <updated>2020-01-13T08:41:24.912Z</updated>
     
     <summary type="html">
     
@@ -55,7 +72,7 @@
     <link href="https://blog.felix-klauke.com/2019/12/17/build-your-gradle-app-with-github-actions/"/>
     <id>https://blog.felix-klauke.com/2019/12/17/build-your-gradle-app-with-github-actions/</id>
     <published>2019-12-17T00:00:00.000Z</published>
-    <updated>2020-01-04T14:17:06.183Z</updated>
+    <updated>2020-01-13T08:41:24.912Z</updated>
     
     <summary type="html">
     
