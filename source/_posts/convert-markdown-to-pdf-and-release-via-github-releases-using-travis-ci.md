@@ -14,6 +14,8 @@ Im Rahmen einer internen Weiterbildungsmaßnahme wird deshalb ein neuer Code Sty
 legen. Wir betrachten im Folgenden die Herausforderung, wie wir diesen Code Style für die 
 Entwickler zur Verfügung stellen.
 
+**Anmerkung: Der Code Style ist keineswegs offiziell bereits der neue Style Guide, in diesem Artikel geht es ausschließlich um die Art und Weise wie hier eine CI Pipeline aufgebaut wurde**
+
 ## Der Style Guide
 Der Code Style an sich ist nah am Google Style Guide aufgebaut und wurde anfangs von mir und [Merlin Osayimwen](https://github.com/ehenoma) entwickelt und als offizieller [Style Guide von vicuna.io](https://github.com/vicuna-io/style-guide) veröffentlicht.
 Für GommeHDnet wurde ein [neuer Fork](https://github.com/gommehdnet/style-guide) begonnen, weil nicht alle Vorschläge des vicuna.io style guides zu 100% auf unseren Anwendungsfall übertragen werden konnten.
