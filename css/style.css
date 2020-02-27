@@ -256,7 +256,11 @@ footer .footer-copyright .copyright-social ul li .fab {
 #blog-article article p,
 #blog-article article li {
   font-family: 'Open Sans', sans-serif !important;
-  text-align: justify;
+  text-align: justify !important;
+}
+#blog-article article a:visited {
+  text-decoration: none;
+  color: blue;
 }
 #blog-article article img {
   display: block;
