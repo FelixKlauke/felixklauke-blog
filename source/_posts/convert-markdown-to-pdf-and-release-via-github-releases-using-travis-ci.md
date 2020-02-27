@@ -107,8 +107,8 @@ deploy:
 
 Als Provider geben wir die GitHub `releases` an. Das einzige File, das uns interessiert ist die PDF vom Style Guide. Damit die nicht schon vor dem Deployment wieder weggeräumt wird, überspringen wir das clean up. Zum Schluss [fügen wir einen API-Key hinzu](https://github.com/settings/tokens) und stecken ihn mit travis in eine [sichere Variable](https://docs.travis-ci.com/user/encrypting-files/), damit Travis CI an unsere GitHub Releases kommt und sagen dem Deployment, es soll sich zum Teufel scheren, es sei denn, es gibt eine neue getaggte Version.
 
-Fertig! 
+Fertig!  
 
-Das Ergebnis lässt sich [hier](https://github.com/gommehdnet/style-guide/) bewundern. Die Releases findet ihr [hier](https://github.com/gommehdnet/style-guide/releases).
+Das Ergebnis lässt sich [hier](https://github.com/gommehdnet/style-guide/) bewundern. Die Releases findet ihr [hier](https://github.com/gommehdnet/style-guide/releases).  
 
 Viel Spaß damit!
