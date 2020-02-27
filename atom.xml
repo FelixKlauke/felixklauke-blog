@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://blog.felix-klauke.com/"/>
-  <updated>2020-02-27T10:47:52.192Z</updated>
+  <updated>2020-02-27T10:55:13.736Z</updated>
   <id>https://blog.felix-klauke.com/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://blog.felix-klauke.com/2020/02/26/convert-markdown-to-pdf-and-release-via-github-releases-using-travis-ci/"/>
     <id>https://blog.felix-klauke.com/2020/02/26/convert-markdown-to-pdf-and-release-via-github-releases-using-travis-ci/</id>
     <published>2020-02-26T20:25:14.000Z</published>
-    <updated>2020-02-27T10:47:52.192Z</updated>
+    <updated>2020-02-27T10:55:13.736Z</updated>
     
     <summary type="html">
     
@@ -40,7 +40,7 @@
     <link href="https://blog.felix-klauke.com/2020/01/12/the-agony-of-finding-a-web-developer/"/>
     <id>https://blog.felix-klauke.com/2020/01/12/the-agony-of-finding-a-web-developer/</id>
     <published>2020-01-12T00:00:00.000Z</published>
-    <updated>2020-02-27T10:47:52.192Z</updated>
+    <updated>2020-02-27T10:55:13.736Z</updated>
     
     <summary type="html">
     
@@ -57,7 +57,7 @@
     <link href="https://blog.felix-klauke.com/2019/12/19/use-checkstyle-with-gradle/"/>
     <id>https://blog.felix-klauke.com/2019/12/19/use-checkstyle-with-gradle/</id>
     <published>2019-12-19T00:00:00.000Z</published>
-    <updated>2020-02-27T10:47:52.192Z</updated>
+    <updated>2020-02-27T10:55:13.736Z</updated>
     
     <summary type="html">
     
@@ -74,7 +74,7 @@
     <link href="https://blog.felix-klauke.com/2019/12/18/publish-maven-artifact-github-package-registry/"/>
     <id>https://blog.felix-klauke.com/2019/12/18/publish-maven-artifact-github-package-registry/</id>
     <published>2019-12-18T00:00:00.000Z</published>
-    <updated>2020-02-27T10:47:52.192Z</updated>
+    <updated>2020-02-27T10:55:13.736Z</updated>
     
     <summary type="html">
     
@@ -91,7 +91,7 @@
     <link href="https://blog.felix-klauke.com/2019/12/17/build-your-gradle-app-with-github-actions/"/>
     <id>https://blog.felix-klauke.com/2019/12/17/build-your-gradle-app-with-github-actions/</id>
     <published>2019-12-17T00:00:00.000Z</published>
-    <updated>2020-02-27T10:47:52.192Z</updated>
+    <updated>2020-02-27T10:55:13.736Z</updated>
     
     <summary type="html">
     
