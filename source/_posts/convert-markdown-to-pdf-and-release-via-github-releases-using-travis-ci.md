@@ -8,11 +8,10 @@ tags: markdown, pdf, travis ci, github, github releases, ci/cd, devops, gommehdn
 ---
 
 # Es war einmal ein Markdown Dokument
-Man mag sich fragen, wie es zu dieser Situation kam. Nun, für eine lange Zeit wurde bei 
-[GommeHD.net](https://www.gommehd.net) ein doch recht unkonventioneller Code Style Guide benutzt.
-Im Rahmen einer internen Weiterbildungsmaßnahme wird deshalb ein neuer Code Style entwickelt, der den alten Style möglichst bald ablösen soll. Der neue Code Style soll dabei sehr viel mehr Wert auf Sauberkeit und komprimierten Source Code 
+Man mag sich fragen, wie es zu dieser Situation kam.
+Im Rahmen einer internen Weiterbildungsmaßnahme wird deshalb ein Code Style entwickelt. Der Code Style soll dabei sehr viel mehr Wert auf Sauberkeit und komprimierten Source Code 
 legen. Wir betrachten im Folgenden die Herausforderung, wie wir diesen Code Style für die 
-Entwickler zur Verfügung stellen.
+Entwickler und für andere interessierte zur Verfügung stellen.  
 
 **Anmerkung: Der Code Style ist keineswegs offiziell bereits der neue Style Guide, in diesem Artikel geht es ausschließlich um die Art und Weise wie hier eine CI Pipeline aufgebaut wurde**
 
