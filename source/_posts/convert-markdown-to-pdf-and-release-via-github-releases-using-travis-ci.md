@@ -1,6 +1,6 @@
 ---
 title: Markdown in PDF umwandeln und mit Travis CI auf GitHub veröffentlichen
-excerpt: GommeHDnet bekommt einen neuen Style Guide, den Teamler als PDF lesen wollen.
+excerpt: GommeHDnet bekommt einen neuen Style Guide, den Menschen als PDF lesen wollen.
 date: 2020-02-26 20:25:14
 author: Felix Klauke
 toc: true
@@ -9,7 +9,7 @@ tags: markdown, pdf, travis ci, github, github releases, ci/cd, devops, gommehdn
 
 # Es war einmal ein Markdown Dokument
 Man mag sich fragen, wie es zu dieser Situation kam.
-Im Rahmen einer internen Weiterbildungsmaßnahme wird deshalb ein Code Style entwickelt. Der Code Style soll dabei sehr viel mehr Wert auf Sauberkeit und komprimierten Source Code 
+Im Rahmen einer internen Weiterbildungsmaßnahme wird ein Code Style entwickelt. Der Code Style soll dabei sehr viel mehr Wert auf Sauberkeit und komprimierten Source Code 
 legen. Wir betrachten im Folgenden die Herausforderung, wie wir diesen Code Style für die 
 Entwickler und für andere interessierte zur Verfügung stellen.  
 
