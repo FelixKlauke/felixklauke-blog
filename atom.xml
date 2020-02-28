@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://blog.felix-klauke.com/"/>
-  <updated>2020-02-27T10:57:33.033Z</updated>
+  <updated>2020-02-28T10:41:28.661Z</updated>
   <id>https://blog.felix-klauke.com/</id>
   
   <author>
@@ -17,11 +17,30 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Stakeholder Gewichtung - Wie behandle ich meine Stakeholder?</title>
+    <link href="https://blog.felix-klauke.com/2020/02/28/stakeholder-gewichtung-wie-behandle-ich-meine-stakeholder/"/>
+    <id>https://blog.felix-klauke.com/2020/02/28/stakeholder-gewichtung-wie-behandle-ich-meine-stakeholder/</id>
+    <published>2020-02-28T12:00:00.000Z</published>
+    <updated>2020-02-28T10:41:28.661Z</updated>
+    
+    <summary type="html">
+    
+      Wie gewichte ich meine Stakeholder und was sagt mir ihre Gewichtung?
+    
+    </summary>
+    
+    
+    
+      <category term="stakeholder, projektmanagement, stakeholderanalyse, stakeholder gewichtung, stakeholdermatrix" scheme="https://blog.felix-klauke.com/tags/stakeholder-projektmanagement-stakeholderanalyse-stakeholder-gewichtung-stakeholdermatrix/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Markdown in PDF umwandeln und mit Travis CI auf GitHub veröffentlichen</title>
     <link href="https://blog.felix-klauke.com/2020/02/26/convert-markdown-to-pdf-and-release-via-github-releases-using-travis-ci/"/>
     <id>https://blog.felix-klauke.com/2020/02/26/convert-markdown-to-pdf-and-release-via-github-releases-using-travis-ci/</id>
     <published>2020-02-26T20:25:14.000Z</published>
-    <updated>2020-02-27T10:57:33.033Z</updated>
+    <updated>2020-02-28T10:41:28.661Z</updated>
     
     <summary type="html">
     
@@ -40,7 +59,7 @@
     <link href="https://blog.felix-klauke.com/2020/01/12/the-agony-of-finding-a-web-developer/"/>
     <id>https://blog.felix-klauke.com/2020/01/12/the-agony-of-finding-a-web-developer/</id>
     <published>2020-01-12T00:00:00.000Z</published>
-    <updated>2020-02-27T10:57:33.033Z</updated>
+    <updated>2020-02-28T10:41:28.661Z</updated>
     
     <summary type="html">
     
@@ -57,7 +76,7 @@
     <link href="https://blog.felix-klauke.com/2019/12/19/use-checkstyle-with-gradle/"/>
     <id>https://blog.felix-klauke.com/2019/12/19/use-checkstyle-with-gradle/</id>
     <published>2019-12-19T00:00:00.000Z</published>
-    <updated>2020-02-27T10:57:33.033Z</updated>
+    <updated>2020-02-28T10:41:28.661Z</updated>
     
     <summary type="html">
     
@@ -74,7 +93,7 @@
     <link href="https://blog.felix-klauke.com/2019/12/18/publish-maven-artifact-github-package-registry/"/>
     <id>https://blog.felix-klauke.com/2019/12/18/publish-maven-artifact-github-package-registry/</id>
     <published>2019-12-18T00:00:00.000Z</published>
-    <updated>2020-02-27T10:57:33.033Z</updated>
+    <updated>2020-02-28T10:41:28.661Z</updated>
     
     <summary type="html">
     
@@ -91,7 +110,7 @@
     <link href="https://blog.felix-klauke.com/2019/12/17/build-your-gradle-app-with-github-actions/"/>
     <id>https://blog.felix-klauke.com/2019/12/17/build-your-gradle-app-with-github-actions/</id>
     <published>2019-12-17T00:00:00.000Z</published>
-    <updated>2020-02-27T10:57:33.033Z</updated>
+    <updated>2020-02-28T10:41:28.661Z</updated>
     
     <summary type="html">
     
