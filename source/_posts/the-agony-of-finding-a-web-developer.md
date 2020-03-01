@@ -9,7 +9,7 @@ date: 2020-01-12
 # Die Qual, einen Web Developer zu finden
 
 Einen Web Developer zu finden hat sich als verdammt schwierige Herausforderung entpuppt. 
-Wir stellen uns selbst einige Frage und reflektieren. 
+Wir stellen uns selbst einige Fragen und reflektieren. 
 
 ## Was wollen wir? Die Jagd nach dem Einhorn
 

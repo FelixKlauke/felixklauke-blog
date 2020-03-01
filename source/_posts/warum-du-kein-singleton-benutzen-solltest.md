@@ -10,7 +10,7 @@ tags: singleton, gang of four, design pattern, Entwurfsmuster, Nachteile Singlet
 {% img /img/article/singleton.jpg [width] [height] '"Singleton" "Singleton"' %}
 
 # Warum du kein Singleton benutzen solltest
-Jeder angehende Entwickler kommt früher oder später an den Punkt, an denen er sich mit Entwurfsmustern auseinandersetzt. Entweder, weil ein anderer Entwickler ihm dazu rät, oder weil er ein Buch liest. Doch nicht alle Enwtwurfsmuster sind ohne Vorbehalte zu genießen. Wir klären, was ein Singleton ist, was seine Vorteile und Nachteile sind und fragen uns nach Sinnhaftigkeit und möglichen Alternativen.
+Jeder angehende Entwickler kommt früher oder später an den Punkt, an denen er sich mit Entwurfsmustern auseinandersetzt. Entweder, weil ein anderer Entwickler ihm dazu rät, oder weil er ein Buch liest. Doch nicht alle Entwurfsmuster sind ohne Vorbehalte zu genießen. Wir klären, was ein Singleton ist, was seine Vorteile und Nachteile sind und fragen uns nach Sinnhaftigkeit und möglichen Alternativen.
 
 ## Der Charakter eines Singletons
 Das Singleton-Muster an sich ist sehr simpel und gehört als "creational pattern" zur Gang of four. Es soll sicherstellen, dass es nur eine Instanz einer Klasse gibt. Das kann zum Beispiel so aussehen:
