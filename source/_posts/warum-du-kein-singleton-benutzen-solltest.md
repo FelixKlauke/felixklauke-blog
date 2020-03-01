@@ -35,7 +35,12 @@ Singletons werden gerne genutzt, um weitere Instanziierungen zu verhindern. Als 
 Außerdem werden Singletons gerne benutzt, wenn eine Implementierung erst zur Laufzeit fest steht und man diese Logik kapseln möchte. Im Endeffekt ist ein Singleton eine einfache Möglichkeit, einen globalen State zu verwalten. Aber ist das gut?
 
 ## Nachteile eines Singletons
-Bei der Entwicklung mit Singletons fällt sofort auf: Das ist fast unmöglich testbar! Es bedarf [PowerMock](https://github.com/powermock/powermock) oder ähnlichen Tools, um Singletons, oder Code der von ihnen abhängt testbar zu machen. Singletons sind nämlich äußerst intransparent und verbergen eventuell Abhängigkeiten. Sie führen zu einer engen Kopplung zwischen Komponenten und provozieren häufig weitere Singletons. Das Singleton, so wie es oben gezeigt wurde, ist außerdem nicht synchronisiert und es bedarf einigen mehr Zeilen, um dies umzusetzen. Sie verletzen das Single Repsonsibility Principle und die von manchen geliebte Zugangskontrolle stellt sich sehr schnell auch als Flaschenhals heraus.
+Bei der Entwicklung mit Singletons fällt sofort auf: Das ist fast unmöglich testbar! Es bedarf [PowerMock](https://github.com/powermock/powermock) oder ähnlichen Tools, um Singletons, oder Code der von ihnen abhängt testbar zu machen. 
+Singletons sind nämlich äußerst intransparent und verbergen eventuell Abhängigkeiten. Abhängigkeiten werden zu einem Implementierungsdetail und ich kann mich nicht auf die Schnittstelle verlassen.
+Sie führen zu einer engen Kopplung zwischen Komponenten und provozieren häufig weitere Singletons. 
+Das Singleton, so wie es oben gezeigt wurde, ist außerdem nicht synchronisiert und es bedarf einigen mehr Zeilen, um dies umzusetzen. 
+Singletons verletzen das Single Responsibility Principle, indem sie sich selbst um ihren kompletten Lebenszyklus und ihre eigentliche Aufgabe kümmern. 
+Die von manchen geliebte Zugangskontrolle stellt sich sehr schnell auch als Flaschenhals heraus, wenn eine einzelne Instanz auf einmal gar nicht mehr zielführend ist. Das Refactoring gestaltet sich dann in der Regel sehr umständlich.
 
 ## Fazit 
 Insgesamt lässt sich sagen, dass Singletons eigentlich eher ein Anti-Pattern sind. Wenngleich sie schnell entwickelt sind und in einer sehr kleinen Codebase sehr effizient sein können, führen sie auf Dauer zu schlechtem Stil, untestbarem Code und bösen Überraschungen. 
