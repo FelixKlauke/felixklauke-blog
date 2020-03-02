@@ -12,24 +12,20 @@
     <meta name="description" content="">
     <meta name="author" content="Felix Klauke">
 
-    <meta name="description" content="Blog von Felix Klauke über Themen wie Programmierung, IT und vieles mehr.">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Felix Klauke | Blog">
-<meta property="og:url" content="https:&#x2F;&#x2F;blog.felix-klauke.com&#x2F;archives&#x2F;2020&#x2F;index.html">
+    <meta name="description" content="Singletons sind eine Lüge und ein böses Relikt vergangener Zeit. Here is why!">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Warum du kein Singleton benutzen solltest">
+<meta property="og:url" content="https:&#x2F;&#x2F;blog.felix-klauke.com&#x2F;2020&#x2F;03&#x2F;01&#x2F;warum-du-kein-singleton-benutzen-solltest&#x2F;index.html">
 <meta property="og:site_name" content="Felix Klauke | Blog">
-<meta property="og:description" content="Blog von Felix Klauke über Themen wie Programmierung, IT und vieles mehr.">
+<meta property="og:description" content="Singletons sind eine Lüge und ein böses Relikt vergangener Zeit. Here is why!">
 <meta property="og:locale" content="de_DE">
+<meta property="og:image" content="https:&#x2F;&#x2F;blog.felix-klauke.com&#x2F;img&#x2F;article&#x2F;singleton.jpg">
+<meta property="article:published_time" content="2020-03-01T18:00:00.000Z">
+<meta property="article:modified_time" content="2020-03-02T08:17:24.995Z">
 <meta property="article:author" content="Felix Klauke">
-<meta property="article:tag" content="Felix Klauke">
-<meta property="article:tag" content="Technik">
-<meta property="article:tag" content="IT">
-<meta property="article:tag" content="Programmierung">
-<meta property="article:tag" content="Blog">
-<meta property="article:tag" content="Java">
-<meta property="article:tag" content="Linux">
-<meta property="article:tag" content="Server">
-<meta property="article:tag" content="Hosting">
+<meta property="article:tag" content="singleton, gang of four, design pattern, Entwurfsmuster, Nachteile Singleton">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https:&#x2F;&#x2F;blog.felix-klauke.com&#x2F;img&#x2F;article&#x2F;singleton.jpg">
 
     <link rel="icon" href="favicon.ico">
 
@@ -123,131 +119,46 @@
 
 <main>
     <div class="container">
-        
-    <div class="article-excerpt">
+        <section id="blog-article">
 
-    <div class="row align-items-center">
-        <div class="col-md-9 col-sm-12">
+    <div class="container">
 
-            <!-- Title -->
-            <h2>
-                <a href="/2020/03/01/warum-du-kein-singleton-benutzen-solltest/">
-                    Warum du kein Singleton benutzen solltest
-                </a>
-            </h2>
+        <div class="row">
+            <!-- Article content -->
+            <div class="col-md-8 col-sm-12">
+                <article>
 
-            <p>
-                Singletons sind eine Lüge und ein böses Relikt vergangener Zeit. Here is why!
-            </p>
+                    <img src="/img/article/singleton.jpg" class="" title="[width] [height] " alt="Singleton">
 
-            <p class="published">
-                Veröffentlicht am 01.03.2020 von Felix Klauke
-            </p>
+<h1 id="Warum-du-kein-Singleton-benutzen-solltest"><a href="#Warum-du-kein-Singleton-benutzen-solltest" class="headerlink" title="Warum du kein Singleton benutzen solltest"></a>Warum du kein Singleton benutzen solltest</h1><p>Jeder angehende Entwickler kommt früher oder später an den Punkt, an denen er sich mit Entwurfsmustern auseinandersetzt. Entweder, weil ein anderer Entwickler ihm dazu rät, oder weil er ein Buch liest. Doch nicht alle Enwtwurfsmuster sind ohne Vorbehalte zu genießen. Wir klären, was ein Singleton ist, was seine Vorteile und Nachteile sind und fragen uns nach Sinnhaftigkeit und möglichen Alternativen.</p>
+<h2 id="Der-Charakter-eines-Singletons"><a href="#Der-Charakter-eines-Singletons" class="headerlink" title="Der Charakter eines Singletons"></a>Der Charakter eines Singletons</h2><p>Das Singleton-Muster an sich ist sehr simpel und gehört als “creational pattern” zur Gang of four. Es soll sicherstellen, dass es nur eine Instanz einer Klasse gibt. Das kann zum Beispiel so aussehen:</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-keyword">final</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Singleton</span> </span>&#123;<br>  <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> Singleton instance; <br>  <br>  <span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-title">Singleton</span><span class="hljs-params">()</span> </span>&#123;<br>  &#125;<br>  <br>  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> Singleton <span class="hljs-title">instance</span><span class="hljs-params">()</span> </span>&#123;<br>    <span class="hljs-keyword">if</span> (instance == <span class="hljs-keyword">null</span>) &#123;<br>      instance = <span class="hljs-keyword">new</span> Singleton();<br>    &#125;<br>    <span class="hljs-keyword">return</span> instance;<br>  &#125;<br>&#125;<br></code></pre></td></tr></table></figure>
+
+<h2 id="Vorteile-eines-Singletons"><a href="#Vorteile-eines-Singletons" class="headerlink" title="Vorteile eines Singletons"></a>Vorteile eines Singletons</h2><p>Singletons werden gerne genutzt, um weitere Instanziierungen zu verhindern. Als alternative zu einfach global sichtbaren Variablen lässt sich mit dem Singleton außerdem eine gewisse Zugriffskontrolle sicherstellen. Die Erzeugung nach Bedarf (“lazy”) kann außerdem Performance einsparen.<br>Außerdem werden Singletons gerne benutzt, wenn eine Implementierung erst zur Laufzeit fest steht und man diese Logik kapseln möchte. Im Endeffekt ist ein Singleton eine einfache Möglichkeit, einen globalen State zu verwalten. Aber ist das gut?</p>
+<h2 id="Nachteile-eines-Singletons"><a href="#Nachteile-eines-Singletons" class="headerlink" title="Nachteile eines Singletons"></a>Nachteile eines Singletons</h2><p>Bei der Entwicklung mit Singletons fällt sofort auf: Das ist fast unmöglich testbar! Es bedarf <a href="https://github.com/powermock/powermock" target="_blank" rel="noopener">PowerMock</a> oder ähnlichen Tools, um Singletons, oder Code der von ihnen abhängt testbar zu machen. Singletons sind nämlich äußerst intransparent und verbergen eventuell Abhängigkeiten. Sie führen zu einer engen Kopplung zwischen Komponenten und provozieren häufig weitere Singletons. Das Singleton, so wie es oben gezeigt wurde, ist außerdem nicht synchronisiert und es bedarf einigen mehr Zeilen, um dies umzusetzen. Sie verletzen das Single Repsonsibility Principle und die von manchen geliebte Zugangskontrolle stellt sich sehr schnell auch als Flaschenhals heraus.</p>
+<h2 id="Fazit"><a href="#Fazit" class="headerlink" title="Fazit"></a>Fazit</h2><p>Insgesamt lässt sich sagen, dass Singletons eigentlich eher ein Anti-Pattern sind. Wenngleich sie schnell entwickelt sind und in einer sehr kleinen Codebase sehr effizient sein können, führen sie auf Dauer zu schlechtem Stil, untestbarem Code und bösen Überraschungen.<br>Singletons sind dahingehend eigentlich ein Überbleibsel aus prozeduralem Code und haben mit Objektorientierung eigentlich nicht allzuviel zu tun. Singletons werden gerne oft weiter ineinander verschachtelt, wodurch zum Beispiel solche Code Schnipsel entstehen:</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs java">Application.getInstance().getModuleManager().getModule(<span class="hljs-string">"myModule"</span>)<br></code></pre></td></tr></table></figure>
+
+<p>Sie laden geradeso dazu ein, das <a href="https://de.wikipedia.org/wiki/Gesetz_von_Demeter" target="_blank" rel="noopener">Gesetz von Demeter</a> zu brechen und sind schlussendlich schlechter Stil und sollten vermieden werden. </p>
+<h2 id="Alternativen"><a href="#Alternativen" class="headerlink" title="Alternativen"></a>Alternativen</h2><p>Die eigentlich einzig wahre Alternative zu Singletons ist die <a href="https://en.wikipedia.org/wiki/Dependency_injection" target="_blank" rel="noopener">Dependency Injection</a>. Wenn ihr euch selbst einen Gefallen tun wollt, dann verabschiedet euch noch heute von Singletons und nutzt Dependency Injection. Für Java gibt es Tools wie <a href="https://github.com/google/guice" target="_blank" rel="noopener">Guice</a>, die das sehr einfach und elegant ermöglichen.<br>Ich hoffe ich konnte einige Sünder bekehren, cheers!</p>
+
+
+                </article>
+            </div>
+
+            <!-- Article author -->
+            <div class="col-md-4 col-sm-12">
+                <div class="author">
+                    <img src="/img/avatar.webp" alt="Felix Klauke">
+
+                    <h3>Felix Klauke</h3>
+                </div>
+            </div>
         </div>
-        <div class="col-md-3 col-sm-12">
 
-            <a class="button button-primary" href="/2020/03/01/warum-du-kein-singleton-benutzen-solltest/">
-                Weiterlesen
-            </a>
-        </div>
     </div>
 
-
-</div>
-
-    <div class="article-excerpt">
-
-    <div class="row align-items-center">
-        <div class="col-md-9 col-sm-12">
-
-            <!-- Title -->
-            <h2>
-                <a href="/2020/02/28/stakeholder-gewichtung-wie-behandle-ich-meine-stakeholder/">
-                    Stakeholder Gewichtung - Wie behandle ich meine Stakeholder?
-                </a>
-            </h2>
-
-            <p>
-                Wie gewichte ich meine Stakeholder und was sagt mir ihre Gewichtung?
-            </p>
-
-            <p class="published">
-                Veröffentlicht am 28.02.2020 von Felix Klauke
-            </p>
-        </div>
-        <div class="col-md-3 col-sm-12">
-
-            <a class="button button-primary" href="/2020/02/28/stakeholder-gewichtung-wie-behandle-ich-meine-stakeholder/">
-                Weiterlesen
-            </a>
-        </div>
-    </div>
-
-
-</div>
-
-    <div class="article-excerpt">
-
-    <div class="row align-items-center">
-        <div class="col-md-9 col-sm-12">
-
-            <!-- Title -->
-            <h2>
-                <a href="/2020/02/26/convert-markdown-to-pdf-and-release-via-github-releases-using-travis-ci/">
-                    Markdown in PDF umwandeln und mit Travis CI auf GitHub veröffentlichen
-                </a>
-            </h2>
-
-            <p>
-                GommeHDnet bekommt einen neuen Style Guide, den Menschen als PDF lesen wollen.
-            </p>
-
-            <p class="published">
-                Veröffentlicht am 26.02.2020 von Felix Klauke
-            </p>
-        </div>
-        <div class="col-md-3 col-sm-12">
-
-            <a class="button button-primary" href="/2020/02/26/convert-markdown-to-pdf-and-release-via-github-releases-using-travis-ci/">
-                Weiterlesen
-            </a>
-        </div>
-    </div>
-
-
-</div>
-
-    <div class="article-excerpt">
-
-    <div class="row align-items-center">
-        <div class="col-md-9 col-sm-12">
-
-            <!-- Title -->
-            <h2>
-                <a href="/2020/01/12/the-agony-of-finding-a-web-developer/">
-                    Die Qual, einen Web Developer zu finden
-                </a>
-            </h2>
-
-            <p>
-                Bei GommeHDnet sind wir seit einiger Zeit auf der Suche nach einem Web Developer. Was machen wir falsch?
-            </p>
-
-            <p class="published">
-                Veröffentlicht am 12.01.2020 von Felix Klauke
-            </p>
-        </div>
-        <div class="col-md-3 col-sm-12">
-
-            <a class="button button-primary" href="/2020/01/12/the-agony-of-finding-a-web-developer/">
-                Weiterlesen
-            </a>
-        </div>
-    </div>
-
-
-</div>
-
+</section>
     </div>
 </main>
 
