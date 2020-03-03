@@ -77,7 +77,7 @@ Wenn wir nun wieder unsere Stakeholder betrachten, können wir uns die Maßnahme
 
 1. **Stakeholder A** muss vorsichtig _überwacht_ werden
 2. **Stakeholder B** gehört zu unseren wichtigsten Stakeholdern und muss _ständig eingebunden_ werden
-3. **Stakeholder C** hat mittleren Einfluss und ist mittel interressiert. _Gelegentliche Einbindung_ sollte hier gegeben sein.
+3. **Stakeholder C** hat mittleren Einfluss und ist mittel interessiert. _Gelegentliche Einbindung_ sollte hier gegeben sein.
 4. **Stakeholder D** hat wenig Interesse und möchte eigentlich nur keine Probleme, er möchte _zufriedengestellt_ werden
 5. **Stakeholder E** möchte nur über Neuerungen informiert werden
 
