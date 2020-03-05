@@ -40,10 +40,6 @@ Es ist auch ratsam, sich vergangene Projekte anzuschauen, weil hier der Kreis de
 ### Versteckte Stakeholder
 man läuft Gefahr Stakeholder zu übersehen, die eigentlich gar nicht betroffen sind. Das klingt paradox, aber auch jemand, der nur glaubt, betroffen zu sein ist ein Stakeholder! Wenn derjenige glaubt, dass du ihn übergehst oder ihm schadest wird er dir Steine in den Weg legen, obwohl du gar nicht mit ihm gerechnet hast, also frag dich auch immer, wer ein Interesse an deinem Projekt hat, aber gar nicht davon betroffen ist!
 
-## Stakeholder Fragebogen
-Wenn du deine Stakeholder gefunden hast, liegt immer noch ein langer Weg vor dir! Nun musst du deine Stakeholder genauer unter die Lupe nehmen und herausfinden, was sie wirklich von dir wollen. 
-Ich habe dir einen einfachen und übersichtlichen Fragenkatalog zusammengestellt, mit dem du direkt durchstarten und deine Stakeholder durchschauen kannst:
-
-<div class="cta">
-<a href="https://www.klauke-enterprises.com/stakeholder-fragebogen" class="button button-primary">Kostenlosen Fragebogen herunterladen</a>
-</div>
+## Stakeholder Gewichtung
+Wenn du deine Stakeholder gefunden hast, liegt immer noch ein langer Weg vor dir! Nun musst du deine Stakeholder genauer unter die Lupe nehmen und herausfinden, was sie wirklich von dir wollen. Ihre Interessen müssen
+danach gewichtet werden. Wie das geht zeige ich <a href="/2020/02/28/stakeholder-gewichtung-wie-behandle-ich-meine-stakeholder/">hier</a>.
