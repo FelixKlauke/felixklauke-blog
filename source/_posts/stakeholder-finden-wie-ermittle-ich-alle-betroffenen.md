@@ -23,8 +23,6 @@ Die externen Stakeholder sind weniger leicht zu fassen und haben größtenteils 
 
 ## Interessen gehen auseinander
 Es ist durchaus üblich, dass nicht alle Stakeholder dich unterstützen. Manche werden sogar gegen dich arbeiten. Aber Stakeholder arbeiten nicht nur gegen dich, sondern oft auch gegeneinander, ob gewollt oder ungewollt.  
-Ein einfaches Beispiel:
-
 Aber gerade dieser Konflikt ist wichtig und markiert für dich Reibungspunkte in deinem Projekt, an denen du und dein Team ansetzen können. Es ist also teilweise sogar wünschenswert, Stakeholder zu finden, deren Interessen und Anforderungen divergieren.
 
 ## Stakeholder identifizieren
