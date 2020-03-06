@@ -1,6 +1,6 @@
 ---
 title: "Stakeholder finden: Gotta catch 'Em All!"
-excerpt: Um Stakeholder glücklich zu machen, muss man sie erstmal finden. Hier erfärhst, wie!
+excerpt: Um Stakeholder glücklich zu machen muss man sie erstmal finden. Hier erfährst du, wie!
 date: 2020-03-03 12:00:00
 author: Felix Klauke
 toc: true
@@ -35,7 +35,7 @@ Manche Stakeholder zu spät zu identifizieren führt oft zu Anforderungsänderun
 - Wer ist direkt oder indirekt von dem Projekt positiv oder negativ betroffen?
 - Wer beschäftigt sich in meinem Umfeld mit ähnlichen Themen?
 
-Es ist auch ratsam, sich vergangene Projekte anzuschauen, weil hier der Kreis der Betroffenen mittelweile gut bekannt sein sollte. Fast immer führt auch eine direkte Nachfrage bei bereits bekannten Betroffenen zur Entdeckung weiterer Betroffener.
+Es ist auch ratsam, sich vergangene Projekte anzuschauen, weil hier der Kreis der Betroffenen mittlerweile gut bekannt sein sollte. Fast immer führt auch eine direkte Nachfrage bei bereits bekannten Betroffenen zur Entdeckung weiterer Betroffener.
 
 ### Versteckte Stakeholder
 man läuft Gefahr Stakeholder zu übersehen, die eigentlich gar nicht betroffen sind. Das klingt paradox, aber auch jemand, der nur glaubt, betroffen zu sein ist ein Stakeholder! Wenn derjenige glaubt, dass du ihn übergehst oder ihm schadest wird er dir Steine in den Weg legen, obwohl du gar nicht mit ihm gerechnet hast, also frag dich auch immer, wer ein Interesse an deinem Projekt hat, aber gar nicht davon betroffen ist!
